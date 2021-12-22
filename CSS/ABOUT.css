@@ -1,0 +1,168 @@
+.all{
+    display: grid;
+    grid-template-rows: 1fr 5fr 3fr;
+    grid-template-areas: "header" "body" "footer";
+    gap: 2px;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+.header{
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+    grid-template-areas: "container1" "navigation";
+    gap: 3px;
+    background-color: black;
+}
+a{
+    text-decoration: none;
+}
+.container1{
+    display: flex;
+}
+.container1 a{
+    text-decoration: none;
+    float: right;
+    font-weight: bold;
+}
+.container1 div{
+    margin-left: 20px;
+}
+.navigation{
+    display: flex;
+    justify-content: right;
+    margin-right: 50px;
+}
+.navigation a{
+    display: block;
+    border: 1px solid black;
+    border-radius: 2em;
+    padding: 0.2em;
+    margin: 0.3em;
+    background-color: black;
+    text-decoration: none;
+    float: right;
+}
+.navigation a:hover{
+    background-color: red;
+}
+.navigation a:active{
+    background-color: red;
+}
+h1{
+    font-size: 35px;
+}
+body{
+    border: 1px solid white;
+    margin: 0;
+}
+.body{
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: "subheader" "main";
+    gap: 2px;
+}
+#subheader{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 30px;
+}
+.par{
+    margin-left: 200px;
+    margin-right: 400px;
+}
+.image{
+    float: right;
+    margin-right: 400px;
+}
+
+
+.footer{
+    display: grid;
+    grid-template-rows: 2fr 5fr;
+    grid-template-areas: "intro" "contact";
+    gap: 2px;
+    color: white;
+    background-color: black;
+}
+.intro{
+    font-weight: bold;
+    font-size: 25px;
+}
+.contact{
+    display: flex;
+}
+#box-1{
+    flex: 1;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "box-11" "box-12";
+    gap: 2px;
+}
+#box-2{
+    flex: 1;
+    display: grid;
+    grid-template-rows:  1fr 2fr;
+    grid-template-areas: "box-21" "box-22";
+    gap: 2px;
+}
+#box-3{
+    flex: 1.5;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "box-31" "box-32";
+    gap: 2px;
+}
+#box-32{
+    display: flex;
+}
+#div1{
+    flex: 1;
+}
+#div2{
+    flex: 1;
+}
+a:link{
+    color: #9e9eff;
+}
+a:hover{
+    color: yellow;
+}
+a:active{
+    color: cyan;
+}
+a:visited{
+    color: magenta;
+}
+
+@media only screen and (max-width: 550px) {
+    .navigation{
+        justify-content: left;
+    }
+    h1{
+        text-align: left;
+        font-size: 35px;
+    }
+    .body{
+        display: block;
+    }
+    #main{
+        display: block;
+    }
+    .image{
+        margin-left: 0px;
+    }
+    .par{
+        margin-left: 0px;
+    }
+    .footer{
+        display: block;
+    }
+    .contact{
+        display: block;
+    }
+    .bob-32{
+        display: block;
+    }
+}
